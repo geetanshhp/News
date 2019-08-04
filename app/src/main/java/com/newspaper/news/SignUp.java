@@ -96,6 +96,9 @@ public class SignUp extends AppCompatActivity
                             {
                                 Toast.makeText(SignUp.this, "Conratulation toy have sucessfully created ypur account", Toast.LENGTH_SHORT).show();
                                 progressDialog.dismiss();
+                                name.setText("");
+                                number.setText("");
+                                password.setText("");
                                 Intent intent=new Intent(SignUp.this,LogIn.class);
                                 startActivity(intent);
                             }

@@ -33,7 +33,7 @@ public class LogIn extends AppCompatActivity
         setContentView(R.layout.activity_log_in);
         login=findViewById(R.id.idlogin);
         signup=findViewById(R.id.idsignup);
-        password=findViewById(R.id.idname);
+        password=findViewById(R.id.idpassword);
         number=findViewById(R.id.idnumber);
         guest=findViewById(R.id.idguest);
         progressDialog=new ProgressDialog(this);
@@ -102,6 +102,8 @@ public class LogIn extends AppCompatActivity
                         {
                             Toast.makeText(LogIn.this, "Welcome", Toast.LENGTH_SHORT).show();
                             progressDialog.dismiss();
+                            password.setText("");
+                            number.setText("");
                             Intent intent=new Intent(LogIn.this,AfterLogIn.class);
                             startActivity(intent);
                         }
