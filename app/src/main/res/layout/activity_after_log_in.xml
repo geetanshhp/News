@@ -4,42 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:background="@drawable/nes"
     android:orientation="vertical"
+    android:layout_weight="1"
+    android:gravity="center|bottom"
     tools:context=".AfterLogIn">
-    <LinearLayout
 
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
     <TextView
         android:id="@+id/idtime"
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
         android:text="Time"
         android:typeface="serif"
-        android:textColor="#000000"
+        android:textColor="@color/colorPrimaryLight"
         android:textStyle="italic"
         android:textSize="17sp"
+
+        android:layout_gravity="center_horizontal|center"
+
         android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/idate"
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="center_horizontal|center"
         android:text="Date"
         android:typeface="serif"
-        android:textColor="#000000"
+        android:textColor="@color/colorPrimaryLight"
         android:textStyle="italic"
         android:textSize="18sp"
         android:layout_height="wrap_content" />
-    </LinearLayout>
+
+
     <Button
         android:layout_width="wrap_content"
-        android:text="Goog to go"
-        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
         android:onClick="Method"
-        android:layout_height="wrap_content" />
+        android:text="GooD to go"
+        android:layout_margin="7dp"
+        android:textColor="@color/colorTextPrimary"
+        android:textAlignment="center" />
 
 
 </LinearLayout>
